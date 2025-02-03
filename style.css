@@ -9,15 +9,63 @@
 
 nav {
     width: 100%;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding: 15px 6%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+
     top: 0;
     left: 0;
-
+    z-index: 1000;
 }
+
+/* ✅ Logo */
+.logo2 img{
+    width: 107px;
+    height: 76px;
+}
+
+/* ✅ Desktop Navbar */
+.nav-links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    text-align: center;
+    color:black;
+    text-decoration: none;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f4a261; /* Change color on hover */
+}
+
+/* ✅ Hide menu icons on large screens */
+.fa-bars, .fa-times {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+#menu-icon, #close-icon {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
 .text .custom-btn{
     background-color: black;
     color: white;
@@ -28,36 +76,12 @@ nav {
 }
 
 
-.nav-links {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    gap: 40px; /* Adds space between nav items */
-    list-style: none;
-    margin-right: 20px;
-}
 
-.nav-links li {
-    display: inline;
 
-}
 
-.nav-links a {
-    text-align: center;
-    color: black;
-    text-decoration: none;
-    font-family: "Poppins", serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 20px;
-}
 
-.nav-links a:hover {
-    color: #f4a261; /* Change color on hover */
-}
 
-.logo img{
+.logo2 .img{
     width:107px;
     height:76px;
 }
@@ -75,7 +99,7 @@ nav {
 
 }
 .logo{
-    margin-left:90px;
+    margin-left:40px;
 }
 .col{
     position: relative;
@@ -182,7 +206,7 @@ nav {
     font-weight: 700;
     font-family: "Poppins", serif;
     margin: 0%;
-    letter-spacing: 7px;
+    letter-spacing: 4px;
 }
 .mission-text p{
     font-size: 24px;
@@ -839,8 +863,7 @@ hr {
 .policy p{
     font-family: "Space Grotesk", serif;
 }
-.foot{
-    text-decoration: underline;
-    color: white;
-    text-underline-offset: 2px; 
+
+.hamburger{
+    display: none
 }

@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,17 +18,22 @@
     <div class="landing-page" id="#landing-page">
    
         <nav>
-            <div class="logo">
+            <div class="logo2">
                 <img src="imgs/logo.png" alt="Logo" />
             </div>
-            <ul class="nav-links">
+            
+            <i class="fa fa-bars" id="menu-icon" onclick="showMenu()"></i>
+        
+            <ul class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Event Highlights</a></li>
                 <li><a href="#founders">For Founders</a></li>
                 <li><a href="#investors">For Investors</a></li>
-               
             </ul>
         </nav>
+        
+        
         <div class=col>
             <div class=text>
                 Welcome to Pitch Den, where Innovation meets Opportunity!<br>
@@ -54,7 +61,7 @@
         <p>OUR MISSION IS TO FOSTER AN ENVIRONMENT WHERE IDEAS CAN BE TRANSFORMED INTO REALITY, WITH THE RIGHT RESOURCES AND SUPPORT. </p>
     </div>
     <div class="mission-gallery">
-        <img src="imgs/image.png"/>
+        <img src="imgs/new.png"/>
     </div>
 </section>
 
@@ -196,10 +203,7 @@
             <button class="send-btn">Subscribe to news </button>
         </div>
     </div>
-<div class="policy">
-    <p>© 2023 Positivus. All Rights Reserved.</p>
-    <a class="foot">Privacy Policy</a>
-<div>
+
     
 </footer>
 <script src="script.js"></script>
