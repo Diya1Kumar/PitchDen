@@ -61,6 +61,23 @@
     .mission-text p{
         font-size: 20px;
     }
+    .story{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-top: 2%;
+        
+    }
+    .story-txt{
+        margin: 30px;
+    }
+    .story-text h2{
+        font-size: 40px;
+    }
+      .frame{
+        margin: 0
+    }
 }
 @media (max-width:1060px){
     .image img{
@@ -89,6 +106,23 @@
     .logo{
         margin-left:20px;
     }
+    .story-txt h2{
+        color:black;
+        font-size: 35px;
+        font-weight: 600;
+        font-family: "Poppins", serif;
+        margin: 0%;
+        letter-spacing: 0.2px;
+    }
+    .story-txt p{
+        font-size: 20px;
+        font-weight: 400;
+        font-family: "Poppins", serif;
+        letter-spacing: 0.2px;
+        line-height: 40px;
+       
+    }
+    
 }
 
 #menu-icon, #close-icon {
@@ -230,6 +264,25 @@
         width: 412px;
         height: 217px;
     }
+    .frame img{
+        width: 600px;
+    }
+    .story{
+        margin-top: 2%
+    }
+    .story-text h2{
+        font-size:35px;
+        margin-bottom: 20px;
+    }
+    .story-txt p{
+        font-size: 20px;
+        font-weight: 400;
+        font-family: "Poppins", serif;
+        letter-spacing: 0.2px;
+        margin-top: 20px;
+        line-height: 30px;
+       
+    }
 }
 @media (max-width:720px){
     .image img{
@@ -242,6 +295,14 @@
     }
     .custom-btn{
         padding: 13px 27px;
+    }
+    .story-text h2{
+        font-size:35px;
+        margin-bottom: 20px;
+    }
+    .story-text p{
+        padding-top: 30px;
+        font-size: 18px
     }
 }
 @media (max-width:680px){
@@ -299,12 +360,23 @@
         height: auto;
 
     }
+    .frame img{
+        width: 460px;
+    }
+    .story-text p{
+
+        font-size: 18px;
+        line-height: 30px;
+    }
 }
 @media (max-width:540px){
     .mission-gallery img{
         width:410px;
         height: auto;
 
+    }
+    .frame img{
+        width: 410px;
     }
 }
 @media (max-width: 480px){
@@ -328,6 +400,18 @@
         height: auto;
 
     }
+    .frame img{
+        width: 350px;
+    }
+    .story-txt p{
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "Poppins", serif;
+        letter-spacing: 0.2px;
+        margin-top: 20px;
+        line-height: 25px;
+       
+    }
 }
 
 @media (max-width:435px){
@@ -335,6 +419,9 @@
         width:350px;
         height: auto;
 
+    }
+    .frame img{
+        width: 330px;
     }
 }
 @media (max-width:380px){
@@ -345,6 +432,9 @@
     }
     .mission-text h2{
         font-size: 26px;}
+        .frame img{
+            width: 300px;
+        }
 }
 @media (max-width:330px){
     .mission-gallery img{
