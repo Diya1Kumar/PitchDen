@@ -78,6 +78,24 @@
       .frame{
         margin: 0
     }
+    .event{
+        text-align: center;
+
+    }
+    .in{
+        margin-left: 0px;
+    }
+    .icons{
+        margin-left: 0;
+        align-items: center;
+        align-content: center;
+        text-align: left;
+        width: 100%;
+    }
+    .s-present, .d-deals, .networking{
+        height: 300px;
+    }
+
 }
 @media (max-width:1060px){
     .image img{
@@ -283,6 +301,18 @@
         line-height: 30px;
        
     }
+    .in{
+        font-size:35px;
+    }
+    .icons{
+        margin: 20px;
+    }
+    .icons h4{
+        font-size: 20px;
+    }
+    .icons p{
+        font-size: 16px;
+    }
 }
 @media (max-width:720px){
     .image img{
@@ -303,6 +333,9 @@
     .story-text p{
         padding-top: 30px;
         font-size: 18px
+    }
+    .s-present, .d-deals{
+        padding-right: 10px;
     }
 }
 @media (max-width:680px){
@@ -341,6 +374,16 @@
     .custom-btn{
         margin-top:15px;
     }
+    .icons{
+        gap:10px;
+    }
+    .icons h4{
+        line-height: 20px;
+    }
+    .icons img{
+        width: 30px;
+        height: 25px;
+    }
 
 }
 @media(max-width: 640px){
@@ -368,6 +411,9 @@
         font-size: 18px;
         line-height: 30px;
     }
+    .in{
+        font-size: 28px;
+    }
 }
 @media (max-width:540px){
     .mission-gallery img{
@@ -377,6 +423,9 @@
     }
     .frame img{
         width: 410px;
+    }
+    .icons{
+        margin: 0;
     }
 }
 @media (max-width: 480px){
@@ -412,6 +461,16 @@
         line-height: 25px;
        
     }
+    .icons p{
+        line-height: 20px;
+        font-size: 16px;
+    }
+    .icons h4{
+        font-size: 20px;
+    }
+    .in{
+        font-size: 25px;
+    }
 }
 
 @media (max-width:435px){
@@ -435,6 +494,16 @@
         .frame img{
             width: 300px;
         }
+        .icons p{
+            line-height: 20px;
+            font-size: 14px;
+        }
+        .icons h4{
+            font-size: 18px;
+        }
+        .in{
+            font-size: 22px;
+        }
 }
 @media (max-width:330px){
     .mission-gallery img{
@@ -442,4 +511,15 @@
         height: auto;
 
     }
+    .icons p{
+        line-height: 20px;
+        font-size: 12px;
+    }
+    .icons h4{
+        font-size: 16px;
+    }
+    .in{
+        font-size: 20px;
+    }
+
 }
