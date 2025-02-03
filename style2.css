@@ -6,14 +6,42 @@
     .image{
         margin-right: 20px;
     }
-    .not-txt img{
-
+    .about-us{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+    }
+    .txt{
+        width: 80%;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+    }
+    .txt p{
+        margin-top: 20px;
+    }
+    .not-txt{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+    }
+    .mission-text h2{
+        font-size: 55px;
+    }
+    .mission-gallery img{
+        width:800px;
+        height: auto;
     }
 }
 @media (max-width:1060px){
     .image img{
         width: 478px;
-        height: 334px
+        height: 334px;
     }
     .text{
         font-size: 40px;
@@ -116,7 +144,17 @@
         margin-right: 40px;
     }
     .custom-btn{
-        padding: 13x 27;
+        padding: 13px 27px;
+    }
+    .txt h6{
+        font-size: 40px ;
+    }
+    .txt p{
+        font-size: 20px;
+    }
+    .not-txt img{
+        width: 412px;
+        height: 217px;
     }
 }
 @media (max-width:720px){
@@ -146,6 +184,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        margin-top: 10px;
     }
     .image{
         display: flex;
@@ -156,7 +195,7 @@
     }
     .text{
         width: 100%;
-        padding-top: 20px;
+        padding-top: 0px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -165,7 +204,16 @@
         margin: 0;
     }
     .custom-btn{
-        margin-top:10px;
+        margin-top:15px;
     }
 
+}
+
+@media (max-width: 480px){
+    .txt h6{
+        font-size: 35px ;
+    }
+    .txt p{
+        font-size: 18px;
+    }
 }
