@@ -170,6 +170,7 @@
 @media (max-width:960px){
     .contain{
         width: 100%;
+        margin: 0;
     }
 }
 @media (max-width:932px){
@@ -203,7 +204,67 @@
         line-height: 40px;
        
     }
-    
+    .contain{
+        position: relative;
+    }
+        .footer-nav {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .logo {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .foot-links {
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 10px;
+    }
+
+    .social-icons {
+        margin: 10px 0;
+        justify-content: center;
+    }
+
+    .outer {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-bottom: 40px;
+    }
+
+    .outer-txt {
+        width: 48%;
+    }
+    .email{
+        text-align: left;
+    }
+    .email-box {
+        width: 48%;
+        padding: 30px 10px;
+    }
+
+    .send-btn {
+        width: auto;
+        font-size: 18px;
+        padding: 10px 25px;
+    }
+
+    .ff {
+        width: 35px;
+        height: 35px;
+        padding: 8px;
+    }
+
+    .ff i {
+        font-size: 18px;
+    }
+
 }
 
 #menu-icon, #close-icon {
@@ -439,6 +500,49 @@
         margin-top: 30px;
         margin-bottom: 30px;
     }
+    .foot-links{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        align-items: first baseline;
+        align-content: flex-start;
+        top:100px;
+        gap: 10px;                               
+        list-style: none;
+        margin-right: 0px;
+        margin-top: 30px;
+
+}
+.social-icons{
+    margin-right:60px;
+}
+.foot-links a {
+    
+    color: white;
+    text-decoration: underline;
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    padding-bottom: 2px;
+}
+.outer-txt{
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    
+}
+.contact{
+    margin-top: 30px;
+}
+
+.email-box{
+    margin: auto
+}
 }
 @media (max-width:720px){
     .image img{
@@ -476,6 +580,9 @@
         letter-spacing: 0.2px;
 
         
+    }
+    .email-box{
+        width:90%;
     }
 }
 @media (max-width:680px){
