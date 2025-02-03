@@ -465,13 +465,23 @@ nav {
     font-family: var(--font-primary);
     
 }
+.founders .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 .heading{
     margin-top: 50px;
-    text-decoration: underline;
     text-decoration-color: white;
+    background-color: #189DA0;
+    width: fit-content;
+    padding:10px 32px;
+    border-radius: 50px;
     font-weight: 500;
     text-underline-offset: 5px;
-    color:#189DA0;
+    color:white;
     font-family: var(--font-primary);
     font-size: 34px;
 }

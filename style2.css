@@ -95,6 +95,13 @@
     .s-present, .d-deals, .networking{
         height: 300px;
     }
+    .gallery-wrapper img{
+        width: 220px;
+        height: 200px;
+    }
+    .eve{
+        margin-left: 0px;
+    }
 
 }
 @media (max-width:1060px){
@@ -337,6 +344,20 @@
     .s-present, .d-deals{
         padding-right: 10px;
     }
+    .gallery-wrapper img{
+        width: 180px;
+        height: 160px;
+    }
+    .eve{
+        color:black;
+        font-size: 30px;
+        font-weight: 600;
+        font-family: "Poppins", serif;
+        padding-top: 40px;
+        letter-spacing: 0.2px;
+
+        
+    }
 }
 @media (max-width:680px){
     .landing-page{
@@ -384,6 +405,10 @@
         width: 30px;
         height: 25px;
     }
+    .gallery-wrapper img{
+        width: 160px;
+        height: 140px;
+    }
 
 }
 @media(max-width: 640px){
@@ -427,6 +452,18 @@
     .icons{
         margin: 0;
     }
+    .gall{
+        margin-top:100px;
+    }
+    .eve{
+        padding-top: 20px;
+    }
+    .gallery-wrapper img{
+        width: 140px;
+        height: 120px;
+        border-radius: 10px;
+    }
+
 }
 @media (max-width: 480px){
     .txt h6{
@@ -471,6 +508,16 @@
     .in{
         font-size: 25px;
     }
+    .eve{
+        font-size: 28px;
+    }
+    .gall{
+        margin-top: 50px;
+    }
+    .gallery-wrapper img{
+        width: 120px;
+        height: 100px;
+    }
 }
 
 @media (max-width:435px){
@@ -481,6 +528,25 @@
     }
     .frame img{
         width: 330px;
+    }
+    .eve{
+        font-size: 25px;
+    }
+    .gall{
+        margin-top: 50px;
+    }
+    .gallery-wrapper{
+        gap: 5px;
+    }
+    .gallery-wrapper img{
+        width: 105px;
+        height: 95px;
+    }
+}
+@media (max-width:370px){
+    .gallery-wrapper img{
+        width: 90px;
+        height: 70px;
     }
 }
 @media (max-width:380px){
@@ -504,6 +570,16 @@
         .in{
             font-size: 22px;
         }
+        .eve{
+            font-size: 22px;
+        }
+        .gall{
+            margin-top: 50px;
+        }
+        .gallery-wrapper img{
+            width: 100;
+            height:80px;
+        }
 }
 @media (max-width:330px){
     .mission-gallery img{
@@ -520,6 +596,10 @@
     }
     .in{
         font-size: 20px;
+    }
+    .gallery-wrapper img{
+        width: 70px;
+        height: 50px;
     }
 
 }
