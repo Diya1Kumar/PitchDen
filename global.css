@@ -1,0 +1,8 @@
+:root {
+    --primary-color: #292A32;  /* Dark background */
+    --secondary-color: #189DA0;; /* Accent color */
+
+
+    --font-primary: 'Poppins', sans-serif;
+    font-family: "Space Grotesk", serif;
+}
