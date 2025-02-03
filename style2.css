@@ -102,6 +102,9 @@
     .eve{
         margin-left: 0px;
     }
+    .founders{
+        height: 1120px;
+    }
 
 }
 @media (max-width:1060px){
@@ -114,6 +117,30 @@
     }
     .nav-links a{
         font-size: 18px;
+    }
+    .heading{
+        font-size: 32px;
+        padding: 8px 30px;
+    }
+    .ready{
+        font-size: 50px;
+    }
+    .para{
+        font-size: 22px;
+    }
+    .apply{
+        margin-top: 40px;
+        font-size: 32px;
+    }
+    .apply-box{
+        margin-top: 30px;
+    }
+    .founders{
+        height: auto;
+    }
+    .founders .custom-btn{
+        margin-top: 30px;
+        margin-bottom: 20px;
     }
 }
 @media (max-width:932px){
@@ -320,6 +347,47 @@
     .icons p{
         font-size: 16px;
     }
+    .heading{
+        font-size: 28px;
+        padding: 5px 26px;
+    }
+    .ready{
+        font-size: 40px;
+        margin-top: 20px;
+    }
+    .para{
+        font-size: 18px;
+        line-height: 28px;
+        margin-top: 20px;
+    }
+    .apply{
+        margin-top: 20px;
+        font-size: 32px;
+    }
+    .apply-box{
+        margin-top: 30px;
+    }
+    .founders{
+        height: auto;
+    }
+    .founders .custom-btn{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .first, .second{
+        width:280px;
+        height:320px;
+        background-color: white;
+        border-radius: 10px;
+        padding:10px;
+    }
+    .num{
+        font-size: 28px;
+}
+    .pitch{
+        margin-top: 10px;
+        font-size: 18px;
+    }
 }
 @media (max-width:720px){
     .image img{
@@ -439,6 +507,55 @@
     .in{
         font-size: 28px;
     }
+    .heading{
+        font-size: 28px;
+        padding: 5px 26px;
+    }
+    .ready{
+        font-size: 40px;
+        margin-top: 20px;
+    }
+    .para{
+        font-size: 18px;
+        line-height: 28px;
+        margin-top: 20px;
+    }
+    .apply{
+        margin-top: 10px;
+        font-size: 32px;
+    }
+    .apply-box{
+        margin-top: 30px;
+    }
+    .founders{
+        height: auto;
+    }
+    .founders .custom-btn{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .first, .second{
+        width:200px;
+        height:320px;
+        background-color: white;
+        border-radius: 10px;
+        padding:10px;
+    }
+    .num{
+        font-size: 25px;
+}
+    .pitch{
+        margin: 0px;
+        font-size: 17px;
+    }
+    .first p{
+        margin-top: 0px;
+        font-size: 16px;
+        line-height: 27px;
+        font-weight: 400;
+        font-family: var(--font-primary);
+        color: #1E1E1E;
+    }
 }
 @media (max-width:540px){
     .mission-gallery img{
@@ -462,6 +579,9 @@
         width: 140px;
         height: 120px;
         border-radius: 10px;
+    }
+ .custom-btn{
+    padding: 15px 20px;
     }
 
 }
@@ -518,6 +638,57 @@
         width: 120px;
         height: 100px;
     }
+    .heading{
+        font-size: 23px;
+        padding: 5px 20px;
+    }
+    .ready{
+        font-size: 32px;
+        margin-top: 20px;
+        line-height: 38px;
+    }
+    .para{
+        font-size: 16px;
+        line-height: 28px;
+        margin-top: 20px;
+    }
+    .apply{
+        margin-top: 10px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .apply-box{
+        margin-top: 30px;
+    }
+    .founders{
+        height: auto;
+    }
+    .founders .custom-btn{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .first, .second{
+        width:180px;
+        height:320px;
+        background-color: white;
+        border-radius: 10px;
+        padding:10px;
+    }
+    .num{
+        font-size: 25px;
+}
+    .pitch{
+        margin: 0px;
+        font-size: 17px;
+    }
+    .first p{
+        margin-top: 0px;
+        font-size: 16px;
+        line-height: 27px;
+        font-weight: 400;
+        font-family: var(--font-primary);
+        color: #1E1E1E;
+    }
 }
 
 @media (max-width:435px){
@@ -541,6 +712,13 @@
     .gallery-wrapper img{
         width: 105px;
         height: 95px;
+    }
+    .first, .second{
+        width:160px;
+        height:320px;
+        background-color: white;
+        border-radius: 10px;
+        padding:10px;
     }
 }
 @media (max-width:370px){
@@ -580,6 +758,13 @@
             width: 100;
             height:80px;
         }
+        .first, .second{
+            width:140px;
+            height:320px;
+            background-color: white;
+            border-radius: 10px;
+            padding:10px;
+        }
 }
 @media (max-width:330px){
     .mission-gallery img{
@@ -600,6 +785,13 @@
     .gallery-wrapper img{
         width: 70px;
         height: 50px;
+    }
+    .first, .second{
+        width:120px;
+        height:320px;
+        background-color: white;
+        border-radius: 10px;
+        padding:10px;
     }
 
 }
