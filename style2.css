@@ -1,4 +1,15 @@
 
+@media (max-width:1115px){
+    .text{
+        font-size: 42px;
+    }
+    .image{
+        margin-right: 20px;
+    }
+    .not-txt img{
+
+    }
+}
 @media (max-width:1060px){
     .image img{
         width: 478px;
@@ -17,7 +28,8 @@
         
     }
     .custom-btn{
-        padding: 13x 27;
+        padding: 13px 27px;
+        font-size: 18px;
     }
     .nav-links a{
         font-size: 16x;
@@ -54,19 +66,23 @@
         flex-direction: column;
         align-items: flex-start;
         padding-top: 60px;
+        padding-left: 20px;
         transition: right 0.3s ease-in-out;
         z-index: 100;
+        color:white;
     }
-
+    .nav-links a{
+        color: white;
+    }
     .nav-links li {
         display: block;
         width: 100%;
-        padding: 10px 20px;
+        
     }
 
     #menu-icon {
         display: block;
-        color: black
+        color: #292A32;
     }
 
     #close-icon {
@@ -74,6 +90,7 @@
         position: absolute;
         right: 20px;
         top: 20px;
+        color: white;
     }
 
     .nav-links.nav-active {
@@ -87,4 +104,68 @@
     .nav-links.nav-active ~ #menu-icon {
         display: none;
     }
+}
+@media (max-width:840px){
+    .image img{
+        width: 444px;
+        height: 300px;
+    } 
+}
+@media (max-width:800px){
+    .image{
+        margin-right: 40px;
+    }
+    .custom-btn{
+        padding: 13x 27;
+    }
+}
+@media (max-width:720px){
+    .image img{
+        width: 414px;
+        height: 270px;
+    
+    } 
+    .image{
+        margin-right: 30px;
+    }
+    .custom-btn{
+        padding: 13px 27px;
+    }
+}
+@media (max-width:680px){
+    .landing-page{
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .image img{
+        width: 444px;
+        height: 300px;
+    } 
+    .col{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: auto;
+        padding-top: 20px;
+    }
+    .text{
+        width: 100%;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 0;
+    }
+    .custom-btn{
+        margin-top:10px;
+    }
+
 }
