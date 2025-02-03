@@ -35,7 +35,15 @@
 }
 
 /* ✅ Mobile Navbar */
-@media (max-width: 830px) {
+@media (max-width: 877px){
+    .image img{
+        width: 478px;
+        height: 334px;
+    } 
+    .text{
+        margin-left:40px;
+    }
+   
     .nav-links {
         position: fixed;
         background: #189DA0;
