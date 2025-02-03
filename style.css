@@ -18,6 +18,14 @@ nav {
     left: 0;
 
 }
+.text .custom-btn{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+.custom-btn a:link, a:visited {
+    text-decoration: none;
+}
 
 
 .nav-links {
@@ -63,7 +71,7 @@ nav {
     border: none;
     border-radius: 15px; /* Rounded corners */
     cursor: pointer;
-    transition: background 0.3s ease-in-out, transform 0.2s ease;
+   
 
 }
 .logo{
@@ -358,35 +366,22 @@ nav {
     padding-top: 40px;
     letter-spacing: 0.2px;
     margin-left:90px;
-    text-align: center;
-}
-.gall {
-    text-align: center;
+    
 }
 
-
-/* Carousel Container */
-.carousel-container {
-    position: relative;
-    width: 100%; /* Adjust based on images */
-    overflow: hidden;
+.gallery-wrapper{
     display: flex;
+    flex-direction: row;
+    justify-content:center ;
     align-items: center;
-}
-
-/* Gallery Wrapper */
-.gallery-wrapper {
-   
-    overflow: hidden;
+    text-align: center;
 }
 .gallery-wrapper img{
-    width:387px;
-    height:311px;
+    width: 387px;
+    height: 331px;
+    border-radius: 20px;
 }
-.gallery {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
+
 
 /* Images */
 .card-img-top {
@@ -533,13 +528,20 @@ nav {
     justify-content: center;
     gap: 10px;
     background-color: white;
+    text-decoration: none;
     padding: 20px 40px;
     border-radius: 15px;
     font-size: 20px;
     color: #191A23;
     border: none;
 }
-
+.custom-btn a{
+    text-decoration: none;
+    color: inherit;
+}
+a:link, a:visited {
+    text-decoration: none;
+}
 
 
 

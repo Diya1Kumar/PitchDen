@@ -13,24 +13,24 @@
 <title>Pitch Den</title>
 </head>
 <body>
-    <div class="landing-page">
+    <div class="landing-page" id="#landing-page">
    
         <nav>
             <div class="logo">
-                <img src="imgs\logo.png" alt="Logo" />
+                <img src="imgs/logo.png" alt="Logo" />
             </div>
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Event Highlights</a></li>
-                <li><a href="#">For Founders</a></li>
-                <li><a href="#">For Investors</a></li>
+                <li><a href="#founders">For Founders</a></li>
+                <li><a href="#investors">For Investors</a></li>
                
             </ul>
         </nav>
         <div class=col>
             <div class=text>
                 Welcome to Pitch Den, where Innovation meets Opportunity!<br>
-                <a href="#"><button class="custom-btn" style="margin-top:40px;">Get Started</button>
+                <a href="#founders"><button class="custom-btn" style="margin-top:40px;">Get Started</button>
                 </a>
             </div>
             <div class=image>
@@ -45,7 +45,7 @@
 
     </div>
     <div class="not-txt">
-        <img src="imgs\poeple.png"/>
+        <img src="imgs/poeple.png"/>
     </div>
 </section>
 <section class="mission">
@@ -54,13 +54,13 @@
         <p>OUR MISSION IS TO FOSTER AN ENVIRONMENT WHERE IDEAS CAN BE TRANSFORMED INTO REALITY, WITH THE RIGHT RESOURCES AND SUPPORT. </p>
     </div>
     <div class="mission-gallery">
-        <img src="imgs\image.png"/>
+        <img src="imgs/image.png"/>
     </div>
 </section>
 
 <section class="story">
     <div class="frame">
-        <img src="imgs\frame.png"/>
+        <img src="imgs/frame.png"/>
        
     </div>
     <div class="story-txt">
@@ -73,42 +73,38 @@
     <p class="in">Inaugural Event Highlights</p>
     <div class="icons">
         <div class="s-present">
-            <img src="imgs\Rocket.png"/>
+            <img src="imgs/Rocket.png"/>
             <h4>Startups Presented</h4>
             <p>11 innovative startups across various industries took the stage.</p>
         </div>
         <div class="d-deals">
-            <img src="imgs\deal.png"/>
+            <img src="imgs/deal.png"/>
             <h4>Den Deals</h4>
             <p>3 startups secured investor interest and potential funding.</p>
         </div>
         <div class="networking">
-            <img src="imgs\Vector.png"/>
+            <img src="imgs/Vector.png"/>
             <h4>Networking</h4>
             <p>Both participating and non-participating founders engaged with investors, fostering new collaborations and future opportunities.</p>
         </div>
     </div>
-<<section class="gall">
+<section class="gall" id="gallery">
     <p class="eve">Event Gallery</p>
-    <div class="carousel-container">
-        <button class="prev" onclick="prevSlide()">&#10094;</button> <!-- Left Arrow -->
+    
         
         <div class="gallery-wrapper">
             <div class="gallery">
                 <img src="imgs/1.png" class="card-img-top" alt="Image 1">
                 <img src="imgs/2.png" class="card-img-top" alt="Image 2">
                 <img src="imgs/3.png" class="card-img-top" alt="Image 3">
-                <img src="imgs/4.png" class="card-img-top" alt="Image 4">
-                <img src="imgs/5.png" class="card-img-top" alt="Image 5">
-                <img src="imgs/6.png" class="card-img-top" alt="Image 6">
-            </div>
+          
         </div>
         
-        <button class="next" onclick="nextSlide()">&#10095;</button> <!-- Right Arrow -->
+       
     </div>
 </section>
 
-<section class="founders" id="founder">
+<section class="founders" id="founders">
     <div class="container">
     <div class="heading">For Founders</div>
     <div class="ready">Is your startup ready for investment?</div>
@@ -127,8 +123,9 @@
         </div>
         </div>
     </div>
-    <button class="custom-btn">Connect Now </button>
-
+    <button class="custom-btn" onclick="window.location.href='https://forms.gle/DxSWShoAb5GQR2xH7'">
+        Connect Now
+    </button>
 </div>
 </section>
 
@@ -164,7 +161,7 @@
         </div>
          
             </div>
-            <button class="custom-btn">Connect Now </button>
+            <button class="custom-btn" onclick="window.location.href='https://forms.gle/xhMh625crFykNMrBA'">Connect Now </button>
     </div>
 </section>
 
@@ -172,13 +169,13 @@
     <div class="contain">
         <div class=footer-nav>
         <div class="logo">
-            <img src="imgs\logo.png" alt="Logo" />
+            <img src="imgs/logo2.png" alt="Logo" />
         </div>
         <ul class="foot-links">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Event Highlights</a></li>
-            <li><a href="#">For Founders</a></li>
-            <li><a href="#">For Investors</a></li>
+            <li><a href="#gallery">Event Highlights</a></li>
+            <li><a href="#founders">For Founders</a></li>
+            <li><a href="#investors">For Investors</a></li>
 
            
         </ul>
@@ -192,7 +189,7 @@
         <div class="outer-txt">
             <div class="contact">Contact us:</div>
             <div class="email">Email:  chirag@lateralhr.in</div>
-            <div class="phone">Phone: 555-567-8901</div>
+            
         </div>
         <div class="email-box">
             <input type="email" placeholder="Email" class="email-input">
