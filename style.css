@@ -348,9 +348,7 @@ nav {
 
 
 
-.gall{
 
-}
 
 .eve{
     color:black;
@@ -443,14 +441,103 @@ nav {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    font-family: var(--font-primary);
+    
 }
 .heading{
-    margin-top: 30px;
+    margin-top: 50px;
     text-decoration: underline;
-    text-decoration-color: var(--secondary-color);
-    color: white;
+    text-decoration-color: white;
+    font-weight: 500;
+    text-underline-offset: 5px;
+    color:#189DA0;
     font-family: var(--font-primary);
+    font-size: 34px;
+}
+.ready{
+    color: white;
+    margin-top: 50px;
+    font-size: 55px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    line-height: 55px;
+}
+.para{
+    color: white;
     font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+    margin-top: 50px;
+}
+.apply{
+    color:#189DA0;
+    margin-top: 60px;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    line-height: 55px;
+}
+.apply-box{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap:20px;
+}
+.first, .second{
+    width:310px;
+    height: 320px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+}
+.first, .second{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.num{
+    color: #189DA0;
+    font-size: 34px;
+    font-family: "Inter", serif;
+    font-weight: 500;
+
+}
+.pitch{
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #189DA0;
+    font-family: var(--font-primary);
+}
+
+
+.first p{
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    font-family: var(--font-primary);
+    color: #1E1E1E;
+}
+
+
+.custom-btn{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 15px;
+    font-size: 20px;
+    color: #191A23;
+    border: none;
 }
 
 
@@ -469,6 +556,54 @@ nav {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.investors{
+    background-image: url('./imgs/Section.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
 
 
 
