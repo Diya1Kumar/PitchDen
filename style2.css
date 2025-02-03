@@ -106,6 +106,24 @@
         height: 1120px;
     }
 
+    .footer{
+        margin-top: 5%;
+    }
+    .email-box{
+        width: 70%;
+    }
+    .email-box {
+
+        margin-top: 20px;
+   
+       
+        
+        
+    }
+    .social-icons{
+        margin-right: 30px;
+    }
+
 }
 @media (max-width:1060px){
     .image img{
@@ -141,6 +159,17 @@
     .founders .custom-btn{
         margin-top: 30px;
         margin-bottom: 20px;
+    }
+    .logo{
+        margin-left: 20px;
+    }
+    .outer{
+        margin-left: 20px;
+    }
+}
+@media (max-width:960px){
+    .contain{
+        width: 100%;
     }
 }
 @media (max-width:932px){
@@ -388,6 +417,28 @@
         margin-top: 10px;
         font-size: 18px;
     }
+    .investors .ready{
+        color:black;
+        font-weight: 600;
+        font-size: 50px;
+        letter-spacing: 0.2px;
+        margin-top: 20px;
+    }
+    .box{
+        margin-top: 20px;
+    }
+    .investors .first, .investors .second, .investors .third, .investors .fourth{
+        width:300px;
+        height: 240px;
+ 
+    
+    }   
+    .investors .custom-btn{
+        background-color: black;
+        color: white;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 }
 @media (max-width:720px){
     .image img{
@@ -477,6 +528,29 @@
         width: 160px;
         height: 140px;
     }
+    .investors .ready{
+        color:black;
+        font-weight: 600;
+        font-size: 45px;
+        letter-spacing: 0px;
+        line-height: 45px;
+        margin-top: 20px;
+    }
+    .box{
+        margin-top: 20px;
+    }
+    .investors .first, .investors .second, .investors .third, .investors .fourth{
+        width:260px;
+        height: 250px;
+ 
+    
+    }   
+    .investors .custom-btn{
+        background-color: black;
+        color: white;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 
 }
 @media(max-width: 640px){
@@ -556,6 +630,33 @@
         font-family: var(--font-primary);
         color: #1E1E1E;
     }
+    .investors .ready{
+        color:black;
+        font-weight: 600;
+        font-size: 40px;
+        letter-spacing: 0px;
+        line-height: 45px;
+        margin-top: 20px;
+    }
+    .box{
+        margin-top: 20px;
+    }
+    .box1, .box2{
+        gap:15px;
+    }
+    .investors .first, .investors .second, .investors .third, .investors .fourth{
+        width:230px;
+        height: 240px;
+        padding:18px;
+ 
+    
+    }   
+    .investors .custom-btn{
+        background-color: black;
+        color: white;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 }
 @media (max-width:540px){
     .mission-gallery img{
@@ -583,6 +684,16 @@
  .custom-btn{
     padding: 15px 20px;
     }
+    .box1, .box2{
+        gap:12px;
+    }
+    .investors .first, .investors .second, .investors .third, .investors .fourth{
+        width:210px;
+        height: 240px;
+        padding:10px;
+ 
+    
+    }   
 
 }
 @media (max-width: 480px){
@@ -669,7 +780,7 @@
     }
     .first, .second{
         width:180px;
-        height:320px;
+        height:370px;
         background-color: white;
         border-radius: 10px;
         padding:10px;
@@ -688,6 +799,25 @@
         font-weight: 400;
         font-family: var(--font-primary);
         color: #1E1E1E;
+    }
+    .box1, .box2{
+        gap:12px;
+    }
+    .investors .first, .investors .second, .investors .third, .investors .fourth{
+        width:180px;
+        height: 240px;
+        padding:10px;
+ 
+    
+    }   
+    .investors .num{
+        font-size: 22px;
+    }
+    .investors .pitch{
+         font-size: 16px;
+    }
+    .box p{
+        font-size: 14px;
     }
 }
 
@@ -715,10 +845,29 @@
     }
     .first, .second{
         width:160px;
-        height:320px;
+        height:400px;
         background-color: white;
         border-radius: 10px;
         padding:10px;
+    }
+    .box1, .box2{
+        gap:12px;
+    }
+    .investors .first, .investors .second, .investors .third, .investors .fourth{
+        width:150px;
+        height: 260px;
+        padding:10px;
+ 
+    
+    }   
+    .investors .num{
+        font-size: 22px;
+    }
+    .investors .pitch{
+         font-size: 16px;
+    }
+    .box p{
+        font-size: 14px;
     }
 }
 @media (max-width:370px){
@@ -760,7 +909,7 @@
         }
         .first, .second{
             width:140px;
-            height:320px;
+            height:400px;
             background-color: white;
             border-radius: 10px;
             padding:10px;
@@ -793,5 +942,12 @@
         border-radius: 10px;
         padding:10px;
     }
+    .investors .first, .investors .second, .investors .third, .investors .fourth{
+        width:130px;
+        height: 300px;
+        padding:10px;
+ 
+    
+    }   
 
 }
