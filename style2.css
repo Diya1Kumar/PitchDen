@@ -302,7 +302,7 @@
 }
 @media (max-width:540px){
     .mission-gallery img{
-        width:400px;
+        width:410px;
         height: auto;
 
     }
@@ -313,12 +313,26 @@
     }
     .txt p{
         font-size: 18px;
+    }    
+    .mission-text h2{
+        font-size: 30px;
+        margin-top: 20px;
+        padding-top:0px;
+    }
+    .mission-text p{
+        line-height: 28px;
+        font-size: 16px;
+    }
+    .mission-gallery img{
+        width:370px;
+        height: auto;
+
     }
 }
 
 @media (max-width:435px){
     .mission-gallery img{
-        width:330px;
+        width:350px;
         height: auto;
 
     }
@@ -329,6 +343,8 @@
         height: auto;
 
     }
+    .mission-text h2{
+        font-size: 26px;}
 }
 @media (max-width:330px){
     .mission-gallery img{
