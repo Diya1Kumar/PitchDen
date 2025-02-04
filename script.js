@@ -18,14 +18,24 @@ function resetMenuOnResize() {
 window.addEventListener('resize', resetMenuOnResize);
 window.addEventListener('load', resetMenuOnResize);
 
+// function showMenu() {
+//     document.getElementById("navLinks").classList.add("nav-active");
+//     document.getElementById("menu-icon").style.display = "none";
+//     document.getElementById("close-icon").style.display = "block";
+// }
+
+// function hideMenu() {
+//     document.getElementById("navLinks").classList.remove("nav-active");
+//     document.getElementById("menu-icon").style.display = "block";
+//     document.getElementById("close-icon").style.display = "none";
+// }
 function showMenu() {
     document.getElementById("navLinks").classList.add("nav-active");
-    document.getElementById("menu-icon").style.display = "none";
-    document.getElementById("close-icon").style.display = "block";
+    document.getElementById("close-icon").style.display = "block"; // Ensure close icon is visible
 }
 
 function hideMenu() {
     document.getElementById("navLinks").classList.remove("nav-active");
-    document.getElementById("menu-icon").style.display = "block";
-    document.getElementById("close-icon").style.display = "none";
+    document.getElementById("close-icon").style.display = "none"; // Hide close icon when closing
 }
+

@@ -267,12 +267,7 @@
 
 }
 
-#menu-icon, #close-icon {
-    display: none;
-    font-size: 24px;
-    color: black;
-    cursor: pointer;
-}
+
 @media (max-width:1032px){
     .mission-gallery img{
         width:800px;
@@ -326,6 +321,7 @@
         transition: right 0.3s ease-in-out;
         z-index: 100;
         color:white;
+        overflow-y: auto;
     }
     .nav-links a{
         color: white;
@@ -343,7 +339,8 @@
 
     #close-icon {
         display: none;
-        position: absolute;
+        position: fixed;
+        z-index: 9999;
         right: 20px;
         top: 20px;
         color: white;
@@ -353,11 +350,12 @@
         right: 0;
     }
 
-    .nav-links.nav-active #close-icon {
-        display: block;
+    .nav-active ~ #close-icon {
+        display: block !important;
     }
-
-    .nav-links.nav-active ~ #menu-icon {
+    
+    /* Hide menu icon when menu is active */
+    .nav-active ~ #menu-icon {
         display: none;
     }
     .mission{
@@ -589,10 +587,12 @@
     .landing-page{
         height: auto;
         padding-bottom: 30px;
+        overflow: hidden;
     }
     .image img{
         width: 444px;
         height: 300px;
+       
     } 
     .col{
         flex-direction: column;
@@ -818,9 +818,10 @@
     .mission-text p{
         line-height: 28px;
         font-size: 16px;
+        margin-bottom: 2px;
     }
     .mission-gallery img{
-        width:370px;
+        width:400px;
         height: auto;
 
     }
@@ -853,8 +854,15 @@
         margin-top: 50px;
     }
     .gallery-wrapper img{
-        width: 120px;
-        height: 100px;
+        width: 200px;
+        height: 190px;
+        border-radius: 5px;
+    }
+    .card-img-top{
+        margin-right: 2px;
+    }
+    .img3{
+        margin-top: 10px;
     }
     .heading{
         font-size: 23px;
@@ -930,7 +938,7 @@
 
 @media (max-width:435px){
     .mission-gallery img{
-        width:350px;
+        width:380px;
         height: auto;
 
     }
@@ -947,8 +955,15 @@
         gap: 5px;
     }
     .gallery-wrapper img{
-        width: 105px;
-        height: 95px;
+        width: 190px;
+        height: 180px;
+        border-radius: 5px;
+    }
+    .card-img-top{
+        margin-right: 2px;
+    }
+    .img3{
+        margin-top: 10px;
     }
     .first, .second{
         width:160px;
@@ -976,11 +991,87 @@
     .box p{
         font-size: 14px;
     }
+    .outer-txt{
+        
+        margin-right: 20px;
+    }
+    .foot-links{
+        padding: 0px;
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+
+    .social-icons{
+        margin-right: 10px;
+    }    .contact{
+        font-size: 13px;
+        padding: 3px;
+        width: 100px;
+        height: 20px;
+    }   
+    .email{
+        font-size: 12px;
+    }
+    .nav-links a{
+        font-size: 14px;
+    }
+    .outer-txt{
+        margin-right: 5px;
+    }
+    .social-icons{
+        margin-right: 5px;
+        gap:10px;
+    }
+    .footer-nav{
+        padding: 10px;
+    }
+    .email-box{
+        margin-top: 30px;
+    }
+    .outer{
+        margin-bottom: 10px;
+    }
+}
+@media (max-width:405px){
+    .img2{
+        margin-top: 10px;
+    }
+    .gallery-wrapper img{
+        width: 190px;
+        height: 180px;
+        border-radius: 5px;
+    }
+    .card-img-top{
+        margin-right: 2px;
+    }
+    .img3{
+        margin-top: 10px;
+    }
+    .mission-gallery img{
+        width:360px;
+        height: auto;
+
+    }
 }
 @media (max-width:370px){
+    .img2{
+        margin-top: 10px;
+    }
     .gallery-wrapper img{
-        width: 90px;
-        height: 70px;
+        width: 190px;
+        height: 180px;
+        border-radius: 5px;
+    }
+    .card-img-top{
+        margin-right: 2px;
+    }
+    .img3{
+        margin-top: 10px;
+    }
+    .mission-gallery img{
+        width:300px;
+        height: auto;
+
     }
 }
 @media (max-width:380px){
@@ -1010,9 +1101,19 @@
         .gall{
             margin-top: 50px;
         }
+        .img2{
+            margin-top: 10px;
+        }
         .gallery-wrapper img{
-            width: 100;
-            height:80px;
+            width: 190px;
+            height: 180px;
+            border-radius: 5px;
+        }
+        .card-img-top{
+            margin-right: 2px;
+        }
+        .img3{
+            margin-top: 10px;
         }
         .first, .second{
             width:140px;
@@ -1021,6 +1122,20 @@
             border-radius: 10px;
             padding:10px;
         }
+        .email-box{
+            margin-top: 30px;
+        }
+}
+@media (max-width:340px){
+    .mission-gallery img{
+        width:290px;
+        height: auto;
+
+    }
+    .not-txt img{
+        width: 330px;
+        height: 217px;
+    }
 }
 @media (max-width:330px){
     .mission-gallery img{
@@ -1028,19 +1143,25 @@
         height: auto;
 
     }
-    .icons p{
-        line-height: 20px;
-        font-size: 12px;
-    }
-    .icons h4{
-        font-size: 16px;
+    .mission-text{
+        width: 80%;
     }
     .in{
         font-size: 20px;
     }
+    .img2{
+        margin-top: 10px;
+    }
     .gallery-wrapper img{
-        width: 70px;
-        height: 50px;
+        width: 190px;
+        height: 180px;
+        border-radius: 5px;
+    }
+    .card-img-top{
+        margin-right: 2px;
+    }
+    .img3{
+        margin-top: 10px;
     }
     .first, .second{
         width:120px;
@@ -1055,6 +1176,77 @@
         padding:10px;
  
     
+    }
+    .contact{
+        font-size: 13px;
+        padding: 3px;
+        width: 100px;
+        height: 20px;
     }   
-
+    .email{
+        font-size: 12px;
+    }
+    .nav-links a{
+        font-size: 14px;
+    }
+    .outer-txt{
+        margin-right: 5px;
+    }
+    .social-icons{
+        margin-right: 5px;
+        gap:10px;
+    }
+    .footer-nav{
+        padding: 10px;
+    }
+    .email-box{
+        margin-top: 10px;
+    }
+    .outer{
+        margin-bottom: 10px;
+    }
+    .first, .second{
+        height: 530px;
+    }
+    .not-txt img{
+        width: 270px;
+        height: 217px;
+    }
+    .frame img{
+        width: 240px;
+    }
+    .icons h4{
+        font-size: 12px;
+    }
+    .icons p{
+        font-size: 10px;
+    }
+    .foot-links a{
+        font-size: 12px;
+    }
+}
+@media (max-width:275px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .social-icons{
+        margin-bottom: 20px;
+    }
+    .foot-links{
+        top: 140px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding: auto;
+    }
+    .outer-txt{
+        display: none;
+    }
+    .email-box{
+        margin-top: 100px;
+    }
 }
