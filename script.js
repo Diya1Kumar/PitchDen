@@ -39,3 +39,6 @@ function hideMenu() {
     document.getElementById("close-icon").style.display = "none"; // Hide close icon when closing
 }
 
+const caousel = document.querySelector(".carousel")
+
+carousel.addEventListener()
