@@ -1,7 +1,7 @@
 
 @media (max-width:1115px){
-    .wrapper .carousel{
-        grid-auto-columns: calc(100% /3)-12px;
+    /* .wrapper .carousel{
+        grid-auto-columns: calc(100% /2)-12px;
         gap: 16px;
        
     }
@@ -15,7 +15,7 @@
         width: 300px;
 
     
-    }
+    } */
     .text{
         font-size: 42px;
     }
@@ -111,13 +111,13 @@
     .s-present, .d-deals, .networking{
         height: 300px;
     }
-    .gallery-wrapper img{
+    /* .gallery-wrapper img{
         width: 220px;
         height: 200px;
-    }
-    .eve{
+    } */
+    /* .eve{
         margin-left: 0px;
-    }
+    } */
     .founders{
         height: 1120px;
     }
@@ -312,7 +312,11 @@
         margin: 0 0 0 80px;
     }
 }
-
+@media (max-width:1021px){
+    .wrapper i{
+        display: block;
+    }
+}
 /* ✅ Mobile Navbar */
 @media (max-width: 877px){
     .image img{
@@ -782,6 +786,9 @@
     }
 }
 @media (max-width:540px){
+    /* .wrapper i{
+        height: 20px;
+        width: 20px;} */
     .mission-gallery img{
         width:410px;
         height: auto;
@@ -869,14 +876,7 @@
     .gall{
         margin-top: 50px;
     }
-    .gallery-wrapper img{
-        width: 200px;
-        height: 190px;
-        border-radius: 5px;
-    }
-    .card-img-top{
-        margin-right: 2px;
-    }
+
     .img3{
         margin-top: 10px;
     }
@@ -950,6 +950,14 @@
     .box p{
         font-size: 14px;
     }
+    .wrapper i {
+        height: 40px;
+        width: 40px;
+        background-color: #189DA0;
+        /* text-align: center; */
+        line-height: 40px;
+        border-radius: 50%;
+    }
 }
 
 @media (max-width:435px){
@@ -975,9 +983,7 @@
         height: 180px;
         border-radius: 5px;
     }
-    .card-img-top{
-        margin-right: 2px;
-    }
+   
     .img3{
         margin-top: 10px;
     }
@@ -1057,9 +1063,7 @@
         height: 180px;
         border-radius: 5px;
     }
-    .card-img-top{
-        margin-right: 2px;
-    }
+   
     .img3{
         margin-top: 10px;
     }
@@ -1078,9 +1082,7 @@
         height: 180px;
         border-radius: 5px;
     }
-    .card-img-top{
-        margin-right: 2px;
-    }
+
     .img3{
         margin-top: 10px;
     }
@@ -1125,9 +1127,7 @@
             height: 180px;
             border-radius: 5px;
         }
-        .card-img-top{
-            margin-right: 2px;
-        }
+       
         .img3{
             margin-top: 10px;
         }
@@ -1173,9 +1173,7 @@
         height: 180px;
         border-radius: 5px;
     }
-    .card-img-top{
-        margin-right: 2px;
-    }
+   
     .img3{
         margin-top: 10px;
     }

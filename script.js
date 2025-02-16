@@ -39,6 +39,64 @@ function hideMenu() {
     document.getElementById("close-icon").style.display = "none"; // Hide close icon when closing
 }
 
-const caousel = document.querySelector(".carousel")
+// const carousel = document.querySelector(".carousel");
 
-carousel.addEventListener()
+// let isDragging= false;
+
+// const dragStart = () => {
+//     isDragging= true;
+// }
+
+// const dragging = (e) => {
+//     if(!isDragging) return;
+//     carousel.scrollLeft = e.pageX;
+// }
+// carousel.addEventListener("mousedown", dragStart);
+// carousel.addEventListener("mousemove", dragging);
+const carousel = document.querySelector(".carousel");
+const prev = document.getElementById("prev");
+const next = document.getElementById("next");
+
+const updateCardWidth = () => {
+    return document.querySelector(".card").offsetWidth + 10; // Get card width including margin
+};
+
+// Move carousel on button click
+next.addEventListener("click", () => {
+    carousel.scrollLeft += updateCardWidth(); // Scroll by one card width
+});
+
+prev.addEventListener("click", () => {
+    carousel.scrollLeft -= updateCardWidth();
+});
+
+// Drag functionality
+let isDragging = false, startX, scrollLeft;
+
+const startDrag = (e) => {
+    isDragging = true;
+    carousel.classList.add("dragging");
+    startX = e.pageX || e.touches[0].pageX;
+    scrollLeft = carousel.scrollLeft;
+};
+
+const onDrag = (e) => {
+    if (!isDragging) return;
+    const x = e.pageX || e.touches[0].pageX;
+    const walk = (x - startX) * 2;
+    carousel.scrollLeft = scrollLeft - walk;
+};
+
+const stopDrag = () => {
+    isDragging = false;
+    carousel.classList.remove("dragging");
+};
+
+// Event listeners for dragging
+carousel.addEventListener("mousedown", startDrag);
+carousel.addEventListener("mousemove", onDrag);
+carousel.addEventListener("mouseup", stopDrag);
+carousel.addEventListener("mouseleave", stopDrag);
+carousel.addEventListener("touchstart", startDrag);
+carousel.addEventListener("touchmove", onDrag);
+carousel.addEventListener("touchend", stopDrag);
